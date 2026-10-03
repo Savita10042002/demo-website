@@ -801,3 +801,74 @@ footer {
     flex-wrap: wrap;
   }
 }
+/* HERO ANIMATION */
+
+.hero-content {
+  animation: fadeUp 1s ease-out;
+}
+
+.nav-image {
+  animation: fadeInRight 1.2s ease-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* CARD HOVER ANIMATION */
+
+.feature-card,
+.skill-card,
+.timeline-card,
+.audience-card,
+.testimonial-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.feature-card:hover,
+.skill-card:hover,
+.timeline-card:hover,
+.audience-card:hover,
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+/* BUTTON HOVER ANIMATION */
+
+.primary-btn,
+.secondary-btn,
+.nav-btn,
+.cta-btn {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.nav-btn:hover,
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
